@@ -19,7 +19,7 @@ make
 ./knock -h www.tcd.ie -p 80 -f response.txt
 ```
 
-This will send an HTTP GET request to the webpage _[www.tcd.ie](http://www.tcd.ie)_ at the socket listening at port 80 and log the response to the file _response.txt_. This example response can be found within the repository.
+This will send an HTTP GET request to the webpage _[www.tcd.ie](http://www.tcd.ie)_ at the socket listening at port 80 and log the response to the file _[response.txt](https://github.com/dooleyb1/ServerSocketKnocking/blob/master/response.txt)_.
 
 ## Example (Local Server)
 
@@ -32,14 +32,12 @@ Socket created on port 8888
 
 Waiting for incoming connections...
 
-
 ```
 
 Then run the c++ knock program and use it to send an HTTP GET request to the host _localhost_ at port 8888. This example logs the response to the terminal rather than a file.
 
 ```
 ./knock -h localhost -p 8888
-
 ```
 
 Server will then notice recieve the connection request and send back a response (defined in server.cpp). If you look back at the knock program the response from the server should have logged to the terminal.
